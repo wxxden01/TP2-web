@@ -9,29 +9,31 @@
 body {
     color: var(--color);
     background-image: url(ressources/img/fond.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     overflow-x: hidden;
 }
 header, nav{
     width: 100vw;
     height: 100vh;
+    min-height: 100vh;
 }        
-.titlePage{
-    position: absolute; 
+.titlePage, .container{
+    position: relative; 
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-height: 100vh;
+}
+.titlePage{
+    max-width: 80vw;
+
 }
 h1#mainTitle{
     font-size: 3em;
-}
-
-.container{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
 }
 .elements{
     display: flex;
@@ -40,21 +42,24 @@ h1#mainTitle{
     justify-content: center;
 }
 .element{
-    margin: 5px;
-    padding: 2.5em;
-    border: solid 1px var(--color);
-
+    margin: calc(2em*0.3);
+    padding: 2em;
+    border: solid 2px var(--color);
     border-radius: 5px;
 }
-
-a{
+a.card{
     text-decoration: none;
     color: var(--color);
+    transition: 0.3s;
 }
-/* a:hover{
-    text-decoration: underline;
+a.card:hover{
     transform: scale(1.1);
-} */
+    transition: 0.3s;
+}
+p.cardText{
+    text-transform: uppercase;
+    font-size: 1.2em;
+    font-weight: 700;
+}
 
-
-/* FUCK AI, JUST USE UR BRAIN AND MAKE WHAT YOU WANT! */
+/* FUCK AI, JUST USE YOUR BRAIN AND MAKE WHAT YOU WANT! */
