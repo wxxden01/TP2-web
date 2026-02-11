@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cours 1 JavaScript</title>
+    <link rel="stylesheet" href="./style/cours_js.css">
+</head>
+<body>
+    <header>
+        <h1 class="title">Cours 1 : JavaScript</h1>
+        <a href="mailto:samuel-gibert@ac-grenoble.fr">Une questions?</a>
+        <div class="links">
+            <a href="../../../../../index.html">Retour acceuil</a>
+            <a href="../cours-et-tp.html">Retour Cours et TP</a>
+        </div>
+
+        <div class="list">
+            <ol><h2 id="sommaire">Sommaire</h2>
+                <li><a href="#structure">Structure de base</a></li>
+                <li><a href="#integration">Intégration dans le html</a></li>
+                <li><a href="#commentaires">Les commentaires</a></li>
+                <li><a href="#variables">Déclaration de variable</a></li>
+                <li><a href="#types">Les types</a></li>
+                <li><a href="#operateurs">Les opérateurs</a></li>
+                <li><a href="#fonctions">Fonctions d'entrée / sortie</a></li>
+            </ol>
+        </div>
+    </header>
+
+    <nav>
+        <h1>LANGAGE JAVASCRIPT : LES BASES DU LANGAGE</h1>
+
+        <h2 id="structure">La structure de base d'un programme en JavaScript</h2>
+
+        <p>Lorsque le code JavaScript se trouve dans un fichier séparé (extension .js), la structure générale d'un programme écrit en JavaScript est relativement simple.</p>
+
+        <code>
+        /* zone d'en-tête */<br>
+        /* déclaration des variables globales */<br>
+        Declaration1;<br>
+        Declaration2;<br><br>
+
+        /* définition des fonctions */<br><br>
+
+        /* CORPS DU PROGRAMME */<br>
+        Instruction1;<br>
+        Instruction2;<br>
+        /* FIN */
+        </code>
+
+        <p>Il est conseillé de déclarer les variables en début de script pour une meilleure lisibilité.</p>
+
+        <h3 id="integration">JavaScript intégré dans une page HTML</h3>
+
+        <p>Lorsque JavaScript est écrit dans une page Web, la structure est différente :</p>
+
+        <code>
+        &lt;!DOCTYPE html&gt;<br>
+        &lt;html&gt;<br>
+        &lt;head&gt;<br>
+        &nbsp;&nbsp;&nbsp;&lt;title&gt;Titre&lt;/title&gt;<br>
+        &nbsp;&nbsp;&nbsp;&lt;script&gt;<br>
+        &nbsp;&nbsp;&nbsp;// variables globales et fonctions<br>
+        &nbsp;&nbsp;&nbsp;&lt;/script&gt;<br>
+        &lt;/head&gt;<br>
+        &lt;body&gt;<br>
+        &nbsp;&nbsp;&nbsp;&lt;script&gt;<br>
+        &nbsp;&nbsp;&nbsp;// instructions<br>
+        &nbsp;&nbsp;&nbsp;&lt;/script&gt;<br>
+        &lt;/body&gt;<br>
+        &lt;/html&gt;
+        </code>
+
+        <p>La balise permettant d'ajouter du JavaScript est <code>&lt;script&gt;</code>.</p>
+
+        <h2 id="commentaires">Les commentaires</h2>
+
+        <p>Les commentaires permettent une meilleure relecture du programme. Ils ne sont pas interprétés par le moteur JavaScript.</p>
+
+        <h3>Types de commentaires</h3>
+
+        <code>
+        // Commentaire sur une ligne<br>
+        /* Commentaire<br>
+        sur plusieurs lignes */
+        </code>
+
+        <h2>Les déclarations et instructions</h2>
+
+        <p>Une instruction se termine généralement par un point-virgule (<code>;</code>).</p>
+
+        <h2 id="variables">Les déclarations de variables</h2>
+
+        <p>JavaScript est un langage faiblement typé. Le type est déterminé lors de l'utilisation.</p>
+
+        <code>
+        var a = 3;      // Number<br>
+        a = "coucou";   // String
+        </code>
+
+        <h3 id="types">Les types JavaScript</h3>
+
+        <ul>
+            <li><strong>Number</strong></li>
+            <li><strong>BigInt</strong></li>
+            <li><strong>String</strong></li>
+            <li><strong>Boolean</strong></li>
+            <li><strong>Null</strong></li>
+            <li><strong>Undefined</strong></li>
+            <li><strong>Object</strong></li>
+            <li><strong>Symbol</strong></li>
+        </ul>
+
+        <h2>Déclaration de variables et constantes</h2>
+
+        <code>
+        let a;<br>
+        let b = 4;<br>
+        const f = 3;<br>
+        var g = "Bonjour";
+        </code>
+
+        <h2 id="operateurs">Les opérateurs</h2>
+
+        <h3>Opérateurs arithmétiques</h3>
+
+        <p>+, -, *, /, %, **</p>
+
+        <code>
+        let a = 5;<br>
+        let b = 2;<br>
+        let c = a / b; // 2.5<br>
+        let d = a % b; // 1
+        </code>
+
+        <h3>Opérateurs logiques</h3>
+
+        <p>!, &&, ||, ==, !=, &lt;, &gt;, &lt;=, &gt;=</p>
+
+        <code>
+        let i = 4;<br>
+        let j = 3;<br>
+        let v = (i == 4 && i > 2); // true
+        </code>
+
+        <h3>Opérateurs d'affectation</h3>
+
+        <code>
+        let i = 3;<br>
+        i++;<br>
+        i += 1;<br>
+        i *= 5;
+        </code>
+
+        <h2 id="fonctions">Fonctions d'entrée / sortie</h2>
+
+        <p>JavaScript permet d'interagir avec l'utilisateur via :</p>
+
+        <code>
+        window.alert("Message");<br>
+        let resultat = window.confirm("Continuer ?");<br>
+        let saisie = window.prompt("Entrez votre nom", "Nom");
+        </code>
+        <br>
+        <a href="./pdf/cours_js.pdf" download>Télécharger le cours</a>
+        <a id="back" href="#sommaire">Sommaire</a>
+    </nav>
+</body>
+</html>

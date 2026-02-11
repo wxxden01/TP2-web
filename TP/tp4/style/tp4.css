@@ -1,0 +1,46 @@
+.contain{
+    width: 80vw;
+    align-self: center;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+.elements{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.element{
+    margin:0 calc((40vw - 12vw)/3);
+    padding: 5px;
+    transition: 0.4s;
+}
+.element:hover{
+    transform: scale(1.3);
+    transition: 0.2s;
+}
+.logo-svg{
+    /* dimenssion du tp */
+    /* width: 74px;
+    height: 60px; */
+
+    width:  6vw;
+    height: 6vw;
+}
+.contain, .element, .desc, .sommaire{
+    margin-top: 5vh;
+}
+a.sumary-link{
+    font-weight: bolder;
+    color: #FFF;
+}
+a:hover{
+    text-decoration: underline;
+}
+.sommaire{
+    font-size: 1.2em;
+}
+.desc{
+    font-size: 1.1em;
+}

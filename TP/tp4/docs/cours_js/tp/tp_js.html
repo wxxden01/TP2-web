@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/tp_js.css">
+    <title>TP js</title>
+</head>
+<body>
+    <header>
+        <h1 class="title">TP 1 : Tableau</h1>
+        <a href="mailto:samuel-gibert@ac-grenoble.fr">Une questions?</a>
+        <div class="links">
+            <a href="../../../../../index.html">Retour acceuil</a>
+            <a href="../cours-et-tp.html">Retour Cours et TP</a>
+        </div>
+
+        <div class="list">
+            <ol><h2 id="sommaire">Sommaire</h2>
+                <li><a href="#introduction">Introduction</a></li>
+                <li><a href="#ex1">Exercice 1</a></li>
+                <li><a href="#ex2">Exercice 2</a></li>
+                <li><a href="#ex3">Exercice 3</a></li>
+                <li><a href="#ex4">Exercice 4</a></li>
+                <li><a href="#ex5">Exercice 5</a></li>
+                <li><a href="#ex6">Exercice 6</a></li>
+                <li><a href="#ex7">Exercice 7</a></li>
+                <li><a href="#ex8">Exercice 8</a></li>
+                <li><a href="#ex9">Exercice 9</a></li>
+            </ol>
+        </div>
+    </header>
+    <nav>
+        <h1>TP8 : LES TABLEAUX</h1>
+
+        <h2 id="introduction">Introduction</h2>
+
+        <p>
+        Dans ce TP, il est demandé d'écrire des fonctions dites utilitaires permettant de travailler avec les tableaux.
+        Ces fonctions seront ensuite utilisables dans d'autres TP.
+        </p>
+
+        <p>
+        Le tableau utilisé contient N éléments. Il est interdit dans cet exercice d'ajouter, d'insérer ou de supprimer une case.
+        </p>
+
+        <p>Déclaration du tableau :</p>
+
+        <code>
+        let N = parseInt(prompt("Combien de case pour le tableau ?"));<br>
+        let A = new Array(N);<br>
+        let nbElemRempli = 0; // le tableau contient N cases vides
+        </code>
+
+        <h3>Aperçu du tableau vide</h3>
+
+        <code>
+        0   1   2   3   ...   N-2   N-1<br>
+        undefined   undefined   undefined   undefined   undefined   undefined
+        </code>
+
+        <p>
+        Les fonctions seront codées dans un fichier <code>.js</code> séparé.  
+        Créer ce fichier et l'ajouter au projet.
+        </p>
+
+        <h3>Pour chaque fonction, respecter les 4 étapes :</h3>
+
+        <p>1. Boîte noire : réfléchir aux entrées et aux sorties.</p>
+        <p>2. Coder la fonction dans le fichier .js.</p>
+        <p>3. Ajouter le mode d'emploi de la fonction.</p>
+        <p>4. Tester la fonction (avec l'inspecteur d'élément).</p>
+
+        <h2 id="ex1">Exercice 1</h2>
+
+        <p>
+        Écrire une fonction <code>initialiserTab1()</code> <br> permettant d'initialiser les N cases d'un tableau avec la valeur 0.
+        À la fin de cette fonction, toutes les cases sont considérées comme remplies.
+        </p>
+
+        <h2 id="ex2">Exercice 2</h2>
+
+        <p>
+        Écrire une fonction <code>initialiserTab2()</code> <br> permettant d'initialiser les N cases d'un tableau
+        avec une valeur passée en paramètre.  
+        À la fin de cette fonction, toutes les cases sont considérées comme remplies.
+        </p>
+
+        <h2 id="ex3">Exercice 3</h2>
+
+        <p>
+        Écrire une fonction <code>remplirTab1()</code> <br> permettant de remplir les N cases d'un tableau
+        avec des valeurs aléatoires comprises entre MIN et MAX.  
+        Même si le tableau est déjà rempli, les anciennes valeurs sont remplacées.
+        </p>
+
+        <h2 id="ex4">Exercice 4</h2>
+
+        <p>
+        Écrire une fonction <code>remplirTab2()</code> <br> permettant de remplir un certain nombre de cases
+        du tableau (sur les N possibles) avec des valeurs aléatoires comprises entre MIN et MAX.
+        </p>
+
+        <p>
+        Exemple : si seulement 3 cases sont remplies (nbElemRempli = 3),
+        le remplissage commence à partir de la case d'indice 3.
+        </p>
+
+        <code>
+        Index : 0   1   2   3   ...   N-2   N-1<br>
+        Valeur : 5   12   3   undefined   undefined   undefined
+        </code>
+
+        <p>
+        Si le nombre de cases à remplir dépasse la capacité du tableau,
+        on remplit jusqu'à la fin sans ajouter de case supplémentaire.
+        </p>
+
+        <h2 id="ex5">Exercice 5</h2>
+
+        <p>
+        Écrire une fonction <code>afficherTab1()</code> permettant d'afficher uniquement
+        les cases remplies du tableau.
+        </p>
+
+        <h2 id="ex6">Exercice 6</h2>
+
+        <p>
+        Écrire une fonction <code>afficherTab2()</code> permettant d'afficher toutes
+        les cases du tableau, qu'elles soient remplies ou non.
+        </p>
+
+        <h2 id="ex7">Exercice 7</h2>
+
+        <p>
+        Écrire une fonction <code>afficherTab3()</code> permettant d'afficher toutes
+        les cases du tableau à partir de la position DEB jusqu'à la position FIN.
+        </p>
+
+        <h2 id="ex8">Exercice 8</h2>
+
+        <p>
+        Écrire une fonction <code>remplirElement()</code> permettant de remplir
+        la première case vide du tableau avec une valeur donnée.
+        </p>
+
+        <p>
+        Si le tableau est complètement rempli, l'opération est impossible.
+        </p>
+
+        <p>
+        La fonction retourne :
+        </p>
+
+        <p>- <code>false</code> si l'opération n'a pas pu être effectuée.</p>
+        <p>- Le nombre d'éléments remplis dans le cas contraire.</p>
+
+        <h2 id="ex9">Exercice 9</h2>
+
+        <p>
+        Écrire une fonction <code>saisirTab()</code> permettant à l'utilisateur
+        de saisir un certain nombre d'éléments du tableau (sur les N possibles).
+        </p>
+
+        <p>
+        Les éléments sont ajoutés les uns après les autres à partir de la première case vide.
+        </p>
+
+        <p>
+        La fonction retourne le nombre de cases remplies du tableau.
+        </p>
+    </nav>
+    <a id="back" href="#sommaire">Sommaire</a>
+</body>
+</html>

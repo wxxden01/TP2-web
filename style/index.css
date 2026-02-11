@@ -8,7 +8,7 @@
 }    
 body {
     color: var(--color);
-    background-image: url(ressources/img/fond.jpg);
+    background-image: url(../img/fond.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     overflow-x: hidden;
@@ -35,6 +35,7 @@ header, nav{
 h1#mainTitle{
     font-size: 3em;
 }
+
 .elements{
     display: flex;
     flex-direction: row;
@@ -46,6 +47,7 @@ h1#mainTitle{
     padding: 2em;
     border: solid 2px var(--color);
     border-radius: 5px;
+    background-color: #042425;
 }
 a.card{
     text-decoration: none;

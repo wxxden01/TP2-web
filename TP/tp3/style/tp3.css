@@ -1,0 +1,35 @@
+ul.listeBalises > li{
+    list-style: none;
+    width: 75vw;
+    /* margin: -10px 0 ; */
+}
+pre{
+    border-radius: 5px;
+}
+div.exo2{
+    text-align: justify;
+    width: 60vw;
+    align-items: start;
+    overflow-x: hidden;
+    margin-top: 50vh;
+    margin-bottom: 150px;
+}
+p#title{
+    max-width: 70vw;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    
+}
+a:hover{
+    text-decoration: underline;
+}
+
+/* exo2 */
+h1.h1{
+    left: 0;
+}
+
+/* FUCK AI, JUST USE YOUR BRAIN AND MAKE WHAT YOU WANT! */

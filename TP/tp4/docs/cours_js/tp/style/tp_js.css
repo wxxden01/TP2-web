@@ -1,0 +1,38 @@
+body {
+    color: #FFF;
+    background-color: #3d3d3d;
+}
+nav{
+    justify-self: center;
+    max-width: 50vw;
+}
+a{
+    color: #FFF;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+.links{
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.list{
+    border: solid 1px black;
+    width: 80%;
+    align-self: center;
+    justify-self: center;
+    margin: 15px 0;
+}
+ol{
+    margin: 20px;
+}
+#back{
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+}
