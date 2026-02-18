@@ -18,15 +18,6 @@ p#title{
     max-width: 70vw;
 }
 
-a{
-    text-decoration: none;
-    color: black;
-    
-}
-a:hover{
-    text-decoration: underline;
-}
-
 /* exo2 */
 h1.h1{
     left: 0;

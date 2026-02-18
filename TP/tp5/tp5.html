@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- frameword css balise code -->
+    <link href="https://cdn.jsdelivr.net/npm/prismjs/themes/prism-tomorrow.min.css" rel="stylesheet">
+    <!-- thèmes langages -->
+    <script src="https://cdn.jsdelivr.net/npm/prismjs/prism.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-java.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@latest/plugins/autoloader/prism-autoloader.min.js"></script>
+
+    <link rel="stylesheet" href="../ressources_for_all_tp/base.css">
+    <link rel="stylesheet" href="./style/tp5.css">
+    <title>TP5 : Les tableaux</title>
+</head>
+<body>
+    <header>
+        <div class="btns">
+            <a class="nav_btn" href="../../index.html">Page d'acceuil</a>   
+            <a target="_blank" class="nav_btn" href="./pdf/TP6-les tableaux.pdf">Accéder au TP</a>
+            <a class="nav_btn" href="./calendrier/Avril-2024.html">Calendrier</a>
+        </div>
+        <div class="container">
+            <div class="bigTitle">
+                <h1>TP5</h1>
+                <p><h3>TP sur les tableaux</h3></p>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <div class="container exo1">
+            <div class="contain">
+                <h2>Exercice 1</h2><br>
+                <table id="cours">
+                    <colgroup>
+                        <col style="background-color: gray;" span="1">
+                        <col style="background-color: orange;" span="1">
+                        <col style="background-color: blue;" span="1">
+                        <col style="background-color: green;" span="1">
+                    </colgroup>
+                    <tr>
+                        <th>Vacances</th>
+                        <th>Zone A</th>
+                        <th>Zone B</th>
+                        <th>Zone C</th>
+                    </tr>
+
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td>Académies : <br>Besançon, Bordeaux, Clermont-Ferand, Dijon, Grenoble, Limoges, Lyon, Poitiers</td>
+                        <td>Académies : <br>Aix-Marsailles, Amiens, Caen, Lille, Nancy-Metz, Nante, Nice, Orléans-Tours, Reims, Rennes, Rouen, Strasbourg</td>
+                        <td>Académies : <br>Créteil, Montpellier, Paris, Toulouse, Versailles</td>
+                    </tr>
+
+                    <tr>
+                        <td>Prérentrée des enseignants</td>
+                        <td class="spe" colspan="3">Reprise des cours : Vendredi 1er Septembre 2017</td>
+                    </tr>
+
+                    <tr>
+                        <td>Rentrée scolaire des élèves</td>
+                        <td class="spe" colspan="3">Reprise des cours : Lundi 4 Septembre 2017</td>
+                    </tr>
+
+                    <tr>
+                        <td>Vacances de la Toussaint</td>
+                        <td class="spe" colspan="3">Fin des cours : Samedi 21 Octobre 2017 <br>Reprise des cours : Lundi 6 Novembre 2017</td>
+                    </tr>
+
+                    <tr>
+                        <td>Vacances de Noël</td>
+                        <td class="spe" colspan="3">Fin des cours : Samedi 23 Décembre 2017 <br>Reprise des cours : Lundi 8 Janvier 2018</td>
+                    </tr>
+
+                    <tr>
+                        <td>Vacances d'hiver</td>
+                        <td>Fin des cours : Samedi 10 Février 2018 <br>Reprise des cours : Lundi 26 Février 2018</td>
+                        <td>Fin des cours : Samedi 24 Février 2018 <br>Reprise des cours : Lundi 12 Mars 2018</td>
+                        <td>Fin des cours : Samedi 17 Février 2018 <br>Reprise des cours : Lundi 5 Mars 2018</td>
+                    </tr>
+
+                    <tr>
+                        <td>Vacances de printemps</td>
+                        <td>Fin des cours : Samedi 7 Avril 2018 <br>Reprise des cours : Lundi 23 Avril 2018</td>
+                        <td>Fin des cours : Samedi 21 Avril 2018 <br>Reprise des cours : Lundi 7 Mai 2018</td>
+                        <td>Fin des cours : Samedi 14 Février 2018 <br>Reprise des cours : Lundi 30 Avril 2018</td>
+                    </tr>
+
+                    <tr>
+                        <td>Vacances d'été</td>
+                        <td class="spe" colspan="3">Fin des cours : Samedi 7 Juillet 2018</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="container exo2">
+            <div class="contain">
+                <h2>Exercice 2</h2><br>
+                <table id="dev">
+                    <tr>
+                        <th>Logo</th>
+                        <th>Diminutif</th>
+                        <th>Nom complet</th>
+                        <th>Année de sortie</th>
+                        <th>Site de référence</th>
+                        <th>Exemple de code</th>
+                    </tr>
+
+                    <!-- php -->
+                    <tr>
+                        <td><a target="_blank" href="./ressources/logo/php.svg"><img class="logo_svg" src="./ressources/logo/php.svg" alt="PHP"></a></td>
+                        <td><p>PHP</p></td>
+                        <td><p>Personal Home Page</p></td>
+                        <td><p>1995</p></td>
+                        <td><a target="_blank" href="https://www.php.net/">Site officiel</a></td>
+<td><pre style="line-height: 0.5;"><code style="font-size: 12px;" class="language-php">&lt;html&gt;
+&lt;body&gt;
+    &lt;?php echo 'My first PHP script!';?&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre></td>
+                    </tr>
+
+                    <!-- JSP -->
+                    <tr>
+                        <td><a target="_blank" href="./ressources/logo/jsp.svg"><img class="logo_svg" src="./ressources/logo/jsp.svg" alt="JSP"></a></td>
+                        <td><p>JSP</p></td>
+                        <td><p>Java Server Pages</p></td>
+                        <td><p>1999</p></td>
+                        <td><a target="_blank" href="https://www.oracle.com/java/technologies/jspt.html">Site officiel</a></td>
+                        <td><pre style="line-height: 0.5;"><code style="font-size: 12px;" class="language-java">&lt;%@ page language="java" %&gt;
+&lt;html&gt;
+&lt;body&gt;
+    &lt;h1&gt;Hello World!&lt;/h1&gt;
+    &lt;%out.println("Current Date: " + new java.util.Date());%&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre></td>
+                    </tr>
+
+                    <!-- ASP -->
+                    <tr>
+                        <td><a target="_blank" href="./ressources/logo/asp.svg"><img class="logo_svg" src="./ressources/logo/asp.svg" alt="ASP"></a></td>
+                        <td><p>ASP</p></td>
+                        <td><p>Active Server Pages</p></td>
+                        <td><p>2002</p></td>
+                        <td><a target="_blank" href="https://learn.microsoft.com/fr-fr/aspnet/core/?view=aspnetcore-10.0">Site officiel</a></td>
+                        <td><pre style="line-height: 0.5;"><code style="font-size: 12px;" class="language-java">&lt;%@ Page Language="C#" %&gt;
+&lt;asp:Button runat="server" Text="Clique!" OnClick="Button1_Click" /&gt;
+&lt;asp:Label runat="server" ID="lbl" /&gt;
+&lt;script runat="server"&gt;protected void Button1_Click(object s, EventArgs e){lbl.Text="Hello ASP.NET!";}&lt;/script&gt;</code></pre></td>
+                    </tr>
+
+                    <!-- ruby -->
+                    <tr>
+                        <td><a target="_blank" href="./ressources/logo/ruby.svg"><img class="logo_svg" src="./ressources/logo/ruby.svg" alt="RUBY"></a></td>
+                        <td><p>RUBY</p></td>
+                        <td><p>RUBY</p></td>
+                        <td><p>1995</p></td>
+                        <td><a target="_blank" href="https://www.ruby-lang.org/fr/">Site officiel</a></td>
+                        <td><pre style="line-height: 0.5;"><code style="font-size: 12px;" class="language-ruby">3.times do
+    print 'Welcome '
+end</code></pre></td>
+                    </tr>
+
+                    <!-- perl -->
+                    <tr>
+                        <td><a target="_blank" href="./ressources/logo/perl.svg"><img class="logo_svg" src="./ressources/logo/perl.svg" alt="PERL"></a></td>
+                        <td><p>PERL</p></td>
+                        <td><p>Practical Extraction and Reporting Language</p></td>
+                        <td><p>1987</p></td>
+                        <td><a target="_blank" href="https://www.perl.org/">Site officiel</a></td>
+                        <td><pre style="line-height: 0.5;"><code style="font-size: 12px;" class="language-perl">my @animals = ("camel", "llama", "owl");
+print $animals[0]; #camel
+print $animals[1]; #llama</code></pre></td>
+                    </tr>
+
+                    <!-- python -->
+                    <tr>
+                        <td><a target="_blank" href="./ressources/logo/python.svg"><img class="logo_svg" src="./ressources/logo/python.svg" alt="PYTHON"></a></td>
+                        <td><p>PYTHON</p></td>
+                        <td><p>PYTHON</p></td>
+                        <td><p>1991</p></td>
+                        <td><a href="https://www.python.org/">Site officiel</a></td>
+                        <td><pre style="line-height: 0.5;"><code style="font-size: 12px;" class="language-python">def hello_world():
+    print("Hello, world!")
+hello_world()</code></pre></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </nav>
+    <footer>
+
+    </footer>
+</body>
+</html>

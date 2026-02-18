@@ -1,0 +1,49 @@
+.contain{
+    margin: 5vh 0;
+    width: 80vw;
+    justify-items: center;
+}
+table#cours{
+    width: 80vw;
+    text-align: justify;
+    font-size: 16px;
+}
+th, tr, td{
+    padding: 15px;
+    border: solid 1px black;
+}
+table#cours th{
+    width: calc(80vw/4);
+    height: auto;
+    text-align: center;
+}
+td.spe{
+    background-color: rgb(179, 142, 73);
+    text-align: center;
+}
+
+/* exo2 */
+table#dev{
+    text-align: center;
+    max-width: 80vw;
+}
+img.logo_svg{
+    width: 60px;
+    height: auto;
+    transition: 0.2s linear;
+}
+img.logo_svg:hover{
+    transform: rotate(15deg) scale(1.2);
+    transition: 0.4s ease;
+    cursor: pointer;
+}
+
+pre{
+    max-width: calc(80vw/3);
+}
+a{
+    color: white;
+}
+a:hover{
+    text-decoration: underline;
+}
