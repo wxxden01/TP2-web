@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    display: inline-block;
+    position: absolute;
+}
+.droite, .gauche{
+    position: relative;
+    width: 50vw;
+    height: 87.5vh;
+}
+.droite{
+    float: right;
+    background-color: blueviolet;
+}
+.gauche{
+    float: left;
+    background-color: aqua;
+}
+footer{
+    position: absolute;
+    bottom: 0;
+}
+.bas{
+    background-color: yellow;
+    height: 12.5vh;
+    width: 100vw;
+}
+
+.return{
+    float: right;
+    margin: 15px;
+    color: #000;
+}

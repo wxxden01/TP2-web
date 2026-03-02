@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.haut{
+    height: 12.5vh;
+    background-color: red;
+}
+nav{
+    display: inline-block;
+    position: absolute;
+}
+.gauche{
+    float: left;
+    width: 12.5vw;
+    background-color: blue;
+}
+.mid{
+    float:left;
+    background: green;
+    width: 75vw;
+}
+.droite{
+    float: right;
+    width: 12.5vw;
+    background-color: brown;
+}
+.gauche, .mid, .droite{  
+    height: 87.5vh;
+    position: relative;
+}
+
+.return{
+    float: right;
+    margin: 10px;
+}

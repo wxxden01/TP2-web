@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.haut{
+    height: 12.5vh;
+    background-color: red;
+}
+nav{
+    display: inline-block;
+    position: absolute;
+}
+.gauche{
+    float: left;
+    width: 12.5vw;
+    background-color: blue;
+}
+.mid{
+    float: right;
+    background: green;
+    width: 87.5vw;
+}
+.gauche, .mid{
+    display: inline-block;  
+    height: 87.5vh;
+}
+
+.return{
+    float: right;
+    margin: 10px;
+}
