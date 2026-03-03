@@ -12,6 +12,7 @@ html,body{
     width: 100px;
     height: 100px;
     margin: 5px;
+    cursor: pointer;
 }
 .faces{
     position: relative;
@@ -40,7 +41,7 @@ img{
     transition: 0.2s;
     border: solid 1px black;
 }
-.card:hover > .faces{
+.card:active > .faces{
     transform: rotateY(0);
     transition: 0.3s;
     cursor: pointer;

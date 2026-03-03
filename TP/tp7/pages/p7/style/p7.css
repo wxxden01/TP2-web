@@ -11,6 +11,10 @@ nav{
     display: inline-block;
     position: absolute;
 }
+.haut, .gauche, .droite, .bas, .colonne{
+    text-align: center;
+    align-content: center;
+}
 .gauche{
     float: left;
     width: 12.5vw;
@@ -20,15 +24,28 @@ nav{
     float:left;
     background: green;
     width: 75vw;
+    height: 72.5vh;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
 }
 .droite{
     float: right;
     width: 12.5vw;
     background-color: brown;
 }
-.gauche, .mid, .droite{  
+.bas{
+    float: left;
+    background-color: chocolate;
+    width: 75vw;
+    height: 15vh;
+}
+.gauche, .droite{  
     height: 87.5vh;
     position: relative;
+}
+
+.colonne{
+    border: solid 2px white;
 }
 
 .return{
