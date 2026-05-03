@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../ressources_for_all_tp/base.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <title>TP10 - JS</title>
+</head>
+<body>
+    <header>
+        <div class="btns">
+            <a class="nav_btn" href="../../index.html">Page d'acceuil</a>
+        </div>
+        <div class="container">
+            <div class="bigTitle">
+                <h1>TP10</h1>
+                <p><h3>TP devis béton</h3></p>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <div class="container">
+            <h1>Devis Béton Lafarge</h1>
+            
+            <div class="form-group">
+                <label for="surface">Surface au sol (m²)</label>
+                <input type="number" id="surface" placeholder="Ex: 100">
+            </div>
+
+            <div class="form-group">
+                <label for="epaisseur">Épaisseur de la dalle (cm)</label>
+                <input type="number" id="epaisseur" placeholder="Entre 15 et 35" min="15" max="35">
+            </div>
+
+            <button onclick="DevisLafarge()">Calculer le devis</button>
+
+            <!-- block afficher lorsque que le devis sera calculer -->
+            <div id="resultat">
+                <div class="res-line"><span>Volume net nécessaire : </span> <span id="volNet"></span></div>
+                <div class="res-line"><span>Nombre de camions (9m³) :</span> <span id="nbCamions"></span></div>
+                <div class="res-line"><span>Volume facturé :</span> <span id="volLivre"></span></div>
+                <div class="res-line"><span>Ciment nécessaire :</span> <span id="poidsCiment"></span></div>
+                <div class="res-line"><span>Total HT :</span> <span id="totalHT"></span></div>
+                <div class="total-box">Total TTC : <span id="totalTTC"></span></div>
+            </div>
+        </div>
+    </nav>
+    <footer>
+
+    </footer>
+</body>
+<script defer src="script/script.js"></script>
+</html>
