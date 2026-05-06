@@ -1,4 +1,3 @@
-// 1. Définition de la Map (Base de données locale)
 const definitions = new Map([
     ["php", {
         title: "PHP",
@@ -13,7 +12,7 @@ const definitions = new Map([
     ["javascript", {
         title: "JavaScript",
         text: "Un langage de programmation de scripts principalement employé dans les pages web interactives.",
-        img: "" // Pas d'image pour celui-ci
+        img: ""
     }]
 ]);
 
@@ -22,7 +21,7 @@ const popTitle = document.getElementById('pop-title');
 const popText = document.getElementById('pop-text');
 const popImg = document.getElementById('pop-img');
 
-// 2. Gestion des événements
+
 document.querySelectorAll('.has-definition').forEach(item => {
     
     item.addEventListener('mouseenter', (e) => {

@@ -3,44 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Wiki Preview Concept</title>
-    <style>
-        body { font-family: sans-serif; line-height: 1.6; padding: 50px; color: #333; }
-        
-        /* Style du mot avec définition */
-        .has-definition {
-            color: #36b;
-            text-decoration: none;
-            border-bottom: 1px dotted #36b;
-            cursor: help;
-        }
-
-        /* Structure de la Popup */
-        #popup {
-            position: absolute;
-            display: none; /* Caché par défaut */
-            width: 300px;
-            background: white;
-            border: 1px solid #ccc;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-            padding: 15px;
-            z-index: 1000;
-            border-radius: 4px;
-        }
-
-        #popup img {
-            width: 100%;
-            height: auto;
-            margin-bottom: 10px;
-            border-radius: 2px;
-        }
-
-        #popup h3 { margin: 0 0 10px 0; font-size: 1.2em; color: #000; }
-        #popup p { margin: 0; font-size: 0.9em; color: #555; }
-    </style>
+    <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-
-    <h1>Mon Article Lorem Ipsum</h1>
+    <a id="back" href="../tp11.html">Retour</a>
+    <h1>Lorem Ipsum</h1>
     <p>
         Le <span class="has-definition" data-ref="php">PHP</span> est un langage de programmation 
         très utilisé. Il permet de créer des sites comme <span class="has-definition" data-ref="wikipedia">Wikipedia</span>. 
@@ -48,7 +15,6 @@
         pour l'interactivité.
     </p>
 
-    <!-- La structure unique de la popup -->
     <div id="popup">
         <img id="pop-img" src="" alt="Image illustrative" style="display:none;">
         <h3 id="pop-title">Titre</h3>
