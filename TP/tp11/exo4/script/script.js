@@ -74,4 +74,4 @@ function actualiser() {
 // Premier affichage au chargement
 actualiser();
 
-// oui cette fois ci j'ai utilisé l'ia pour faire le js faute de temps
+// oui cette fois ci j'ai utilisé l'ia pour faire le js faute de temps. je peux pas le cacher c'est flagrant 
