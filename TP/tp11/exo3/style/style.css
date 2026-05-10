@@ -6,3 +6,10 @@ h1{
     justify-items: center;
     font-size: 25px;
 }
+
+#back{
+    position: relative;
+    float: right;
+    right: 0;
+}
+
