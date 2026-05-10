@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulaire JPO</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <a id="back" href="../tp11.html">Retour</a>
+    <h2>Inscription Journée Porte Ouverte</h2>
+
+    <form id="visiteForm">
+        <input type="text" id="nom" placeholder="Nom" required>
+        <input type="text" id="prenom" placeholder="Prénom" required>
+        
+        <select id="etude">
+            <option value="Bac pro">Bac pro</option>
+            <option value="STI">STI</option>
+            <option value="STMG">STMG</option>
+            <option value="Général">Général</option>
+        </select>
+
+        <button type="submit">Ajouter à la liste</button>
+    </form>
+
+    <table id="tableauVisiteurs">
+        <thead>
+            <tr>
+                <th>Nom</th>
+                <th>Prénom</th>
+                <th>Étude suivie</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Les lignes s'ajouteront ici -->
+        </tbody>
+    </table>
+
+    <script src="./script/script.js" defer></script>
+</body>
+</html>

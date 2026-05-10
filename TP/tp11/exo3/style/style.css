@@ -1,0 +1,8 @@
+h1{
+    justify-self: center;
+}
+
+#countdown{
+    justify-items: center;
+    font-size: 25px;
+}
